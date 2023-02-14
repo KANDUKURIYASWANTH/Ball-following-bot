@@ -1,15 +1,30 @@
 import cv2 as cv
 import numpy as np
+import imutils
+from imutils.video import VideoStream
+import argparse
+import time
 # here we can give a video locations as a string of the path
-cap = cv.VideoCapture(0)
+
 prevCircle = None
 def dist(x1, y1, x2, y2): return pow((x1-x2), 2)+pow((y1-y2), 2)
 
 
+ap = argparse.ArgumentParser()
+ap.add_argument("-v", "--video",
+                help="path to the (optional) video file")
+ap.add_argument("-b", "--buffer", type=int, default=64,
+                help="max buffer size")
+args = vars(ap.parse_args())
+time.sleep(2.0)
+# if a video path was not supplied, grab the reference
+# to the webcam
+if not args.get("video", False):
+    vs = VideoStream(src=0).start()
 # out = cv2.VideoWriter('opt')
-while(cap.isOpened()):
-    ret, frame = cap.read()
-
+while True:
+    frame = vs.read()
+    frame = frame[1] if args.get("video", False) else frame
     # cap.get(cv2.cap)  using the prop id
 
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
@@ -38,8 +53,12 @@ while(cap.isOpened()):
         prevCircle = chosen
     cv.imshow("circles", frame)
 
-    if cv.waitKey(0) & 0xFF == ord('q'):
+    if cv.waitKey(1) & 0xFF == ord('q'):
         break
 
-cap.release()
+if not args.get("video", False):
+    vs.stop()
+# otherwise, release the camera
+else:
+    vs.release()
 cv.destroyAllWindows()
