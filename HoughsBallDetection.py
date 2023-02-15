@@ -7,12 +7,12 @@ import time
 # here we can give a video locations as a string of the path
 
 prevCircle = None
-def dist(x1, y1, x2, y2): return pow((x1-x2), 2)+pow((y1-y2), 2)
+def dist(x1, y1, x2, y2):
+    return pow((x1-x2), 2)+pow((y1-y2), 2)
 
-
+#this is all the video capturing part
 ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video",
-                help="path to the (optional) video file")
+
 ap.add_argument("-b", "--buffer", type=int, default=64,
                 help="max buffer size")
 args = vars(ap.parse_args())
@@ -22,6 +22,11 @@ time.sleep(2.0)
 if not args.get("video", False):
     vs = VideoStream(src=0).start()
 # out = cv2.VideoWriter('opt')
+
+#distance measurement part starts from here 
+
+
+
 while True:
     frame = vs.read()
     frame = frame[1] if args.get("video", False) else frame
@@ -39,7 +44,7 @@ while True:
                               param1=100, param2=30, minRadius=75, maxRadius=400)
 
     if circles is not None:
-        circles = np.uint16(np.around(circles))
+        circles = np.int32(np.around(circles))
         chosen = None
         for i in circles[0, :]:
             if chosen is None:
