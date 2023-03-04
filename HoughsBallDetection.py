@@ -33,7 +33,7 @@ while True:
     # cap.get(cv2.cap)  using the prop id
 
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    blurFrame = cv.GaussianBlur(gray, (17, 17), 0)
+    blurFrame = cv.GaussianBlur(gray, (21, 21), 0)
     # cv.imshow('frame', gray)
 
     #100 is the minimum distance between the centers of 2 circles for qualifying as
@@ -49,12 +49,13 @@ while True:
         for i in circles[0, :]:
             if chosen is None:
                 chosen = i
+                #getting the best circle out of the older ones
             if prevCircle is not None:
                 if dist(chosen[0], chosen[1], prevCircle[0], prevCircle[1]) <= dist(i[0], i[1], prevCircle[0], prevCircle[1]):
                     chosen = i
         #drawing the circumfrence of the ball and the center point
-        cv.circle(frame, (chosen[0], chosen[1]), 1, (0, 100, 100), 3)
-        cv.circle(frame, (chosen[0], chosen[1]), chosen[2], (0, 0, 255), 3)
+        cv.circle(frame, (chosen[0], chosen[1]), 1, (0, 100, 100), 3)           #center
+        cv.circle(frame, (chosen[0], chosen[1]), chosen[2], (0, 0, 255), 3)     #circumference
         prevCircle = chosen
     cv.imshow("circles", frame)
 
