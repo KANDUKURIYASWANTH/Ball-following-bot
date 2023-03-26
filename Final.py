@@ -1,5 +1,3 @@
-# python3 dist.py --filter HSV --webcam
-
 import serial
 from picamera.array import PiRGBArray
 from picamera import PiCamera
@@ -97,8 +95,8 @@ def main():
 
             #distance calculation
             
-            # print(2*radius)
-            f = 637.27  # Focal length of Pi camera module v1.3
+            
+            f = 637.27  
             dist = (f * 6) / (2 * radius)
             print("py", dist)
             r = str(dist) + "\n" + str(x) + "\n" + str(y) + "\n"
@@ -106,12 +104,11 @@ def main():
 
             # only proceed if the radius meets a minimum size
             if radius > 10:
-                # draw the circle and centroid on the frame,
-                # then update the list of tracked points
+                #updating the tracking points according to the centriod we got 
                 cv2.circle(image, (int(x), int(y)),
                            int(radius), (0, 255, 255), 2)
                 cv2.circle(image, center, 3, (0, 0, 255), -1)
-                cv2.putText(image, "centroid", (center[0] + 10, center[1]), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 255),
+                cv2.putText(image, "centroid", (center[0] + 10, center[1]), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 0, 0 ),
                             1)
                 cv2.putText(image, "(" + str(center[0]) + "," + str(center[1]) + ")", (center[0] + 10, center[1] + 15),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 255), 1)
@@ -121,11 +118,11 @@ def main():
         cv2.imshow("Thresh", thresh)
         cv2.imshow("Mask", mask)
 
-        rawCapture.truncate(0)
+        rawCapture.truncate(0)   #ending the frame buffer input
 
         if cv2.waitKey(1) & 0xFF is ord('q'):
             break
 
-
+#just a checking variable for the 
 if __name__ == '__main__':
     main()
