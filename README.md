@@ -59,9 +59,7 @@
           <th>COMPONENT NAME</th>
           <th>QUANTITY</th>
           <th>DESCRIPTION</th>
-    </tr>
-  
-    
+     </tr>
      </table>
    
    
