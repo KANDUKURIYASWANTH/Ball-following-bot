@@ -93,7 +93,7 @@
         <tr>
           <td>BreadBoard</td>
           <td>1</td>
-          <td>use in power distribution use to connect multiple pin to a single pin</td>
+          <td>use in power distribution ,use to connect multiple pin to a single pin</td>
         </tr>
      </table>
    
