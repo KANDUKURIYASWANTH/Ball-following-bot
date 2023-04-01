@@ -54,7 +54,15 @@
  <ul>
 <hr>
 <h3>Hardware components</h3>
+  <table> 
+     <tr>
+          <th>COMPONENT NAME</th>
+          <th>QUANTITY</th>
+          <th>DESCRIPTION</th>
+    </tr>
   
+    
+     </table>
    
 <hr>
 <h3>Implementation</h3>
