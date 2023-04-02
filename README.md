@@ -99,8 +99,7 @@
    
    <hr>
    <h3>Circuit Daigram</h>
-   <img src="raspberry.PNG" alt="Raspberry" width="500" height="333">
-   
+
 
 <hr>
 <h3>Implementation</h3>
