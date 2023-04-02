@@ -23,6 +23,11 @@
     <td>Electronics and Communication Engineering</td>
     <td>20195168</td>
   </tr>
+  <tr>
+    <td>Purushotam Kumar Agrawal</td>
+    <td>Electrical Engineering</td>
+    <td>20192042</td>
+  </tr>
  </table>
  <hr>
 <h3>This project is completed by</h3>
