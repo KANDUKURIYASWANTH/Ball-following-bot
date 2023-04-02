@@ -1,9 +1,11 @@
 <h1>Ball_following_bot-2022-23-Project</h1>
 <hr>
-<p>This is one of a project based on hardware and OpenCV which is proposed and executed by robotics club to provide hands on experience and exposure to the students in different fields related to robotics.</p>
-<p>The project report has been detailed in the report doc along with the hardware components and tech stack</p>
+<img src="https://user-images.githubusercontent.com/79747698/229343724-9ffa2d01-7c86-4305-b14d-dd788f58a9de.jpeg" alt="Robotics club MNNIT"/>
+<h3>About</h3>
+<p>This is a project based on hardware and OpenCV which is proposed and executed by robotics club of MNNIT to provide hands on experience and exposure to the students in different fields related to robotics.</p>
+<img src="https://user-images.githubusercontent.com/79747698/229343600-aa178f7f-1cf4-4532-8e00-98a17d6e7e50.jpg" alt="Ball following bot"/>
 <hr>
-<h3>This project is mentored by</h3>
+<h3>This project is mentored by:</h3>
 <table>
   <tr>
     <th>Name</th>
@@ -100,8 +102,8 @@
    <hr>
 <h3>Circuit Daigram</h>
  <ul>
-   <li> <img src="https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png" alt="Circuit diagram" width="600px" height="400px"/></li>
-   <li><img src="https://user-images.githubusercontent.com/117128615/229332931-1dc10930-3478-4594-9fa2-fbc279fc4072.png" alt="arduino diagram" width="600px" height="400px"/></li>
+   <li> <img src="https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png" alt="Circuit diagram" width="80%" height="60%"/></li>
+   <li><img src="https://user-images.githubusercontent.com/117128615/229332931-1dc10930-3478-4594-9fa2-fbc279fc4072.png" alt="arduino diagram" width="80%" height="50%"/></li>
 </ul>
 <hr>
 <h3>Implementation</h3>
