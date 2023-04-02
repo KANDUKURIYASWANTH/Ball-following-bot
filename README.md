@@ -98,14 +98,11 @@
      </table>
    
    <hr>
-   <h3>Circuit Daigram</h>
-   <ul>
- <li> ![allcircuit](https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png)
-  </li>
-  <li>
-   ![arduino1](https://user-images.githubusercontent.com/117128615/229332931-1dc10930-3478-4594-9fa2-fbc279fc4072.png)
-  </li>
-  </ul>
+<h3>Circuit Daigram</h>
+ <ul>
+   <li> <img href="https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png" alt="Circuit diagram"/></li>
+   <li><img href="https://user-images.githubusercontent.com/117128615/229332931-1dc10930-3478-4594-9fa2-fbc279fc4072.png" alt="arduino diagram"/></li>
+</ul>
 <hr>
 <h3>Implementation</h3>
    
