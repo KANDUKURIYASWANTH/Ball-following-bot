@@ -99,7 +99,7 @@
    
    <hr>
    <h3>Circuit Daigram</h>
-   ![arduino1](https://user-images.githubusercontent.com/117128615/229331643-b54c3959-03f5-4001-82ee-2b93238a1c66.png)
+  
 
 <hr>
 <h3>Implementation</h3>
