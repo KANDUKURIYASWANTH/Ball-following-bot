@@ -131,7 +131,7 @@ It provides various functions and algorithms that can be used to perform tasks r
 <li>NumPy (Numerical Python):It is a Python library for scientific computing and data analysis. 
 It provides powerful multi-dimensional arrays and matrices, as well as functions to manipulate and perform operations on them.
 NumPy is widely used in scientific computing, data analysis, and machine learning applications.</li>
-  <li>We usually require different modules compared to the already installed versions of a certain software present on the system, therefore its highly recommended to use virtual environment for every project 
+  <li>Virtual Enviroment(Venv):We usually require different modules compared to the already installed versions of a certain software present on the system, therefore its highly recommended to use virtual environment for every project 
 For our project the dependencies used in the virtual environment are available in the packages.txt
   </li>
 </ol>
