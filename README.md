@@ -97,7 +97,8 @@
         </tr>
      </table>
    
-   
+   <hr>
+   <h3>Circuit Daigram</h>
 
 <hr>
 <h3>Implementation</h3>
