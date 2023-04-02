@@ -192,15 +192,16 @@ This block of code checks if the list of contours cnts is not empty. If there ar
 <h4>Now coming to the aduino Code implementation</h4> 
 
 Here we are firstly  defining the pins for the Arduino 
-
+<code>
 //M1 M2 left motors
 #define M1 3 //forward
 #define M2 5 //backward
 //M3 M4 right motors
 #define M3 6 //forward
 #define M4 11 //backward
-
+</code>
 After that we have to setup the pins in the function
+<code>
 void setup()
 {
     Serial.begin(9600);
@@ -210,7 +211,7 @@ void setup()
     pinMode(M3, OUTPUT);
     pinMode(M4, OUTPUT);
 } 
-
+</code>
 
 Then the code control shifts to the loop function 
 
