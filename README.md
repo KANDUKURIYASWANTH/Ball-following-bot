@@ -51,7 +51,7 @@
   <li>Python</li>
   <li>OpenCV</li>
   <li>Raspberry Pi [Raspbian OS buster series]</li>
- <ul>
+ </ul>
 <hr>
 <h3>Hardware components</h3>
    <table> 
