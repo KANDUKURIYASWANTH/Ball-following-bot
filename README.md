@@ -99,10 +99,11 @@
    
    <hr>
    <h3>Circuit Daigram</h>
-   <ul>
-     <li><img src="![allcircuit](https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png)" alt="allcircuit" width="1000" height="500" ></li>
+   <p>
+  ![allcircuit](https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png)
+  
      <li><img src="arduino1.png" alt="arduino" width="1000" height="500" ></li>
-  </ul>
+  </p>
 <hr>
 <h3>Implementation</h3>
    
