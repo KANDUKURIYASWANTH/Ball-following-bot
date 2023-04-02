@@ -184,7 +184,47 @@ This block of code checks if the list of contours cnts is not empty. If there ar
 <h4>The predef.py is the same code that has been modified with hardcoded values of hsv to detect a specify ball of a certain color</h4>
 
 
-Now coming to the aduino Code implementation 
+<h4>Now coming to the aduino Code implementation</h4> 
+
+Here we are firstly  defining the pins for the Arduino 
+
+//M1 M2 left motors
+#define M1 3 //forward
+#define M2 5 //backward
+//M3 M4 right motors
+#define M3 6 //forward
+#define M4 11 //backward
+
+After that we have to setup the pins in the function
+void setup()
+{
+    Serial.begin(9600);
+
+    pinMode(M1, OUTPUT);
+    pinMode(M2, OUTPUT);
+    pinMode(M3, OUTPUT);
+    pinMode(M4, OUTPUT);
+} 
+
+
+Then the code control shifts to the loop function 
+
+
+The loop function begins with a condition of  Serial. Available() which returns true or false 
+So the rest of the code runs if we are receiving a serial input from the raspberry pi 
+
+
+The we are reading the input from the serial that we are receiving in the form of string 
+We are using he necessary functions such as Serial.readStringUntil('\n') for getting the values encoded in the string and then atof(a.c_str()) for converting the sting to a floating integer for the required values that is 
+3)Distance of the ball from the camera
+2)X coordinate of the ball’s center in the frame
+3) Y coordinate of the ball’s center in the frame
+
+
+Then we are defining some functions for using in the logic
+
+The Logic is simple where the  balls x coordinates are used to call the function according to where the balls center is .
+Using this we are able to move the bots motors at necessary speed and also calibrate the amount of left and right movement the bot need to move.
 
 
    
