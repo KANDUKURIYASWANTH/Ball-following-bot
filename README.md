@@ -109,7 +109,17 @@
      
 <hr>
 <h3>Application</h3>
+<ul>
+<li> Research: Ball following bots can be used in research settings to study various aspects of robotics and machine learning, such as object detection, tracking, and control.</li>
+<li>Research: Ball following bots can be used in research settings to study various aspects of robotics and machine learning, such as object detection, tracking, and control.</li>
+</ul>
+
 <hr>
 <h3>Future plans</h3>
-
+<ul>
+<li>Machine learning models can be implemented to make the bot work in complex dynamic environments.</li>
+<li>Image analysis part can be used for home automated security systems, automated CCTV’s which can track intruders and click pictures and send them over wireless systems.</li>
+<li>The bot can be upgraded by replacing raspberry Pi with jetson nano to provide GPU power for object detection and model training dynamically and to help in building real-time applications.</li>
+<li>Currently working on integrating neural networks and the bot to build bots like a person following an object following bot which helps in carrying and deploying heavy objects at the desired destination without human intervention.</li>
+  </ul>
 <hr>
