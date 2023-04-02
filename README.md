@@ -110,7 +110,7 @@
 <hr>
 <h3>Application</h3>
 <ul>
-<li> Research: Ball following bots can be used in research settings to study various aspects of robotics and machine learning, such as object detection, tracking, and control.</li>
+<li>Goods carrying and management: The bot can be upgraded to track and follow staff in industries that help and carry much heavier loads and dynamically follow any path followed by a staff which results in efficiency and effectiveness and is economical to the industries.</li>
 <li>Research: Ball following bots can be used in research settings to study various aspects of robotics and machine learning, such as object detection, tracking, and control.</li>
 </ul>
 
