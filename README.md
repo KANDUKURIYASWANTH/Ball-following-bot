@@ -1,39 +1,130 @@
-# Ball-following-bot
 
+<h1>Ball_following_bot-2022-23-Project</h1>
+<hr>
+<img src="https://user-images.githubusercontent.com/79747698/229343724-9ffa2d01-7c86-4305-b14d-dd788f58a9de.jpeg" alt="Robotics club MNNIT" />
+<h3>About</h3>
+<p>This is a project based on hardware and OpenCV which is proposed and executed by robotics club of MNNIT to provide hands on experience and exposure to the students in different fields related to robotics.</p>
+<img src="https://user-images.githubusercontent.com/79747698/229343600-aa178f7f-1cf4-4532-8e00-98a17d6e7e50.jpg" alt="Ball following bot" width="70%" height="60%"/>
+<hr>
+<h3>This project is mentored by:</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Branch</th>
+    <th>Registration number</th>
+  </tr>
+  <tr>
+    <td>Kandukuri Yaswanth</td>
+    <td>Civil Engineering</td>
+    <td>20201057</td>
+  </tr>
+  <tr>
+    <td>Anurag gupta</td>
+    <td>Electronics and Communication Engineering</td>
+    <td>20195168</td>
+  </tr>
+ </table>
+ <hr>
+<h3>This project is completed by</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Branch</th>
+    <th>Registration number</th>
+  </tr>
+  <tr>
+    <td>SSR Sri Harsha Kedarisetty</td>
+    <td>Computer Science and Engineering</td>
+    <td>20214527</td>
+  </tr>
+  <tr>
+    <td>Vikas Gaur</td>
+    <td>Mechanical Engineering</td>
+    <td>20213038</td>
+  </tr>
+  <tr>
+    <td>Vishal Yadav</td>
+    <td>Mechanical Engineering</td>
+    <td>20213044</td>
+  </tr>
+ </table>
+<hr>
+<h3> Tech Stack </h3>
+<ul>
+  <li>Python</li>
+  <li>OpenCV</li>
+  <li>Raspberry Pi [Raspbian OS buster series]</li>
+ </ul>
+<hr>
+<h3>Hardware components</h3>
+   <table> 
+    <tr>
+          <th>COMPONENT NAME</th>
+          <th>QUANTITY</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+          <td>Arduino Uno</td>
+          <td>  1</td>
+          <td>Microcontroller,used to drive the motor driver</td>
+        </tr>
+        <tr>
+          <td>Motor Driver</td>
+          <td>1</td>
+          <td>use to control the working speed and direction of two motor</td>
+        </tr>
+        <tr>
+          <td>DC Motor</td>
+          <td>2</td>
+          <td>use to rotate wheel</td>
+        </tr>
+        <tr>
+          <td>Wheel</td>
+          <td>2</td>
+          <td>To drive the bot</td>
+        </tr>
+        <tr>
+          <td>Raspberry Pi</td>
+          <td>1</td>
+          <td>use in image processing,wireless connectivity,send the coordinate and distance of object to arduino</td>
+        </tr>
+        <tr>
+          <td>Camera Module</td>
+          <td>1</td>
+          <td>used to detect the ball as an objeft in the video frame</td>
+        </tr>
+        <tr>
+          <td>BreadBoard</td>
+          <td>1</td>
+          <td>use in power distribution ,use to connect multiple pin to a single pin</td>
+        </tr>
+     </table>
+   
+   <hr>
+<h3>Circuit Diagram</h><br>
+<br>
+ <ul>
+   <li> <img src="https://user-images.githubusercontent.com/117128615/229332812-a73c6fbc-30c1-4024-96b3-d3f0309c2496.png" alt="Circuit diagram" width="80%" height="60%"/></li>
+   <li><img src="https://user-images.githubusercontent.com/117128615/229332931-1dc10930-3478-4594-9fa2-fbc279fc4072.png" alt="arduino diagram" width="80%" height="50%"/></li>
+</ul>
+<hr>
+<h3>Implementation</h3>
+   
+     
+<hr>
+<h3>Application</h3>
+<ul>
+<li>Goods carrying and management: The bot can be upgraded to track and follow staff in industries that help and carry much heavier loads and dynamically follow any path followed by a staff which results in efficiency and effectiveness and is economical to the industries.</li>
+<li>Research: Ball following bots can be used in research settings to study various aspects of robotics and machine learning, such as object detection, tracking, and control.</li>
+</ul>
 
-The ball following bot is an innovative technology that works by combining Arduino, Raspberry Pi, and YOLO algorithm with OpenCV. It uses a USB webcam to capture the live video feed, which is then sent to the Raspberry Pi. The Raspberry Pi uses the OpenCV library and YOLO algorithm to detect the ball in the video feed. Once the ball is detected, the Raspberry Pi calculates the position of the ball relative to the center of the video frame and sends the position data to the Arduino Uno. The Arduino Uno controls the DC motors through the L298N motor driver module, which moves the bot in the required direction to keep the ball in the center of the video frame.
+<hr>
+<h3>Future plans</h3>
+<ul>
+<li>Machine learning models can be implemented to make the bot work in complex dynamic environments.</li>
+<li>Image analysis part can be used for home automated security systems, automated CCTV’s which can track intruders and click pictures and send them over wireless systems.</li>
+<li>The bot can be upgraded by replacing raspberry Pi with jetson nano to provide GPU power for object detection and model training dynamically and to help in building real-time applications.</li>
+<li>Currently working on integrating neural networks and the bot to build bots like a person following an object following bot which helps in carrying and deploying heavy objects at the desired destination without human intervention.</li>
+  </ul>
+<hr>
 
-The ball following bot has various potential applications in different industries. In sports, it can be used as a training aid for athletes to improve their ball control, speed, and agility. In the entertainment industry, it can be designed to follow a specific color or pattern, allowing children to play various games with it. Additionally, the bot can be programmed to perform various dance moves, making it an entertaining robot for parties and events.
-
-To build this project, we will need the following components:
-
-Arduino Uno
-Raspberry Pi 4
-USB webcam
-DC motors with wheels
-L298N motor driver module
-Ultrasonic sensor
-9V battery
-Breadboard
-Jumper wires
-The following software is also required:
-
-Python 3.7 or above
-OpenCV library
-YOLO algorithm
-
-
-The ball following bot works in the following way:
-
-The USB webcam captures the live video feed and sends it to the Raspberry Pi.
-The Raspberry Pi uses the OpenCV library to detect the ball in the video feed using the YOLO algorithm. YOLO (You Only Look Once) is a real-time object detection algorithm that can detect multiple objects in an image or video feed.
-Once the ball is detected, the Raspberry Pi calculates the position of the ball relative to the center of the video frame.
-The Raspberry Pi then sends the position data to the Arduino Uno, which controls the DC motors.
-The Arduino Uno uses the position data to calculate the direction in which the bot needs to move to keep the ball in the center of the video frame.
-The Arduino Uno controls the DC motors through the L298N motor driver module, which moves the ball following bot in the required direction.
-
-
-
-To improve the accuracy of the ball following bot, more advanced computer vision and machine learning algorithms can be incorporated. Furthermore, its mobility can be enhanced by using more powerful motors and wheels, enabling it to move faster and more efficiently. Additionally, sensors and navigation systems can be added to make the bot work in various environments, such as on uneven terrain.
-
-In conclusion, the ball following bot is a promising technology that can be used in various industries. Its components, such as the Arduino, Raspberry Pi, and motor driver module, work together to detect and follow the ball. With advancements in technology, the bot can be further developed to perform more complex tasks and work in different environments.
