@@ -99,8 +99,8 @@
    
    <hr>
    <h3>Circuit Daigram</h>
-  
-
+    <img src="allcircuit.png" alt="allcircuit" width="1000" height="500" >
+     <img src="arduino1.png" alt="arduino" width="1000" height="500" >
 <hr>
 <h3>Implementation</h3>
    
